@@ -4,7 +4,8 @@ import NewTaskForm from "./NewTaskForm";
 import TaskList from "./TaskList";
 
 // import { CATEGORIES, TASKS } from "../data";
-// выше оригинальный код, я удаляю из него TASKS, так как все таски будут браться из базы данных JSON 
+// выше оригинальный код, я удаляю из него TASKS, так как все таски будут браться из базы данных JSON
+// в CATEGORIES потом должен пойти код из база данных  
 
 import { CATEGORIES } from "../data";
 
