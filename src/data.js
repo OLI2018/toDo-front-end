@@ -1,4 +1,6 @@
-export const CATEGORIES = ["All", "Code", "Food", "Money", "Misc"];
+// this data/file was created and used for front end development only to fetch data before the databaes was created. Keeping this data for ref only. 
+
+// export const CATEGORIES = ["All", "Code", "Food", "Money", "Misc"];
 
 // export const TASKS = [
 //   {

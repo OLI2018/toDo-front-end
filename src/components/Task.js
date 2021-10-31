@@ -1,26 +1,20 @@
-  
 import React from "react";
 
-// function Task({ text, category, onDeleteTask }) {
-  function Task({ task, text, category, onDeleteTask }) {
-  // function handleClick() {
-  //   onDeleteTask(text);
-  // }
-
-  const { id } = task;
+function Task({ task, onDeleteTask }) {
 
   function handleClick() {
-    fetch(`http://localhost:9292/todos${id}`, {
+    fetch(`http://localhost:9292/todos/${task.id}`, {
       method: "DELETE",
     });
 
-    onDeleteTask(id);
+
+    onDeleteTask(task.id);
   }
 
   return (
     <div className="task">
-      <div className="label">{category}</div>
-      <div className="text">{text}</div>
+      <div className="label">{task.category.name}</div>
+      <div className="text">{task.text}</div>
       <button onClick={handleClick} className="delete">
         X
       </button>
